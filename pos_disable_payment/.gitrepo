@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = .
+	branch = subrepo/pos_disable_payment
+	commit = 1b53cb52bd9ca08fe55db3f564ba2e38b76e7a7c
+	parent = c06066669ad425a5ed5507c2ea96b4e89a1a3d79
+	cmdver = 0.3.1

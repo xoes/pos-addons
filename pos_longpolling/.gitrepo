@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = .
+	branch = subrepo/pos_longpolling
+	commit = c43bb01b1adf2a53da35ecb40b1ad845e8151762
+	parent = 047d68c0b9c29aae50a7b61815ae01e49bcb1b31
+	cmdver = 0.3.1

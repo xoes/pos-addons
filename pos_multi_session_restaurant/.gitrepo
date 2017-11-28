@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = .
+	branch = subrepo/pos_multi_session_restaurant
+	commit = 88960f7f7a2fa8f6ceddee0b3f19d914603dca66
+	parent = 6682edeada844568c0d3379b3041111be3b96749
+	cmdver = 0.3.1

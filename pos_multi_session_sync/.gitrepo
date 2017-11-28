@@ -1,0 +1,11 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = .
+	branch = subrepo/pos_multi_session_sync
+	commit = 2bd094d67975c819b7f582b1ae2a421b6115d971
+	parent = e27a7068505a496989ebb26be18663089417fb25
+	cmdver = 0.3.1
