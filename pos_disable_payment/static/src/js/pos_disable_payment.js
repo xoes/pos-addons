@@ -35,7 +35,7 @@ odoo.define('pos_disable_payment', function(require){
             var order = this.pos.get_order();
             if (order) {
                  // User option calls "Allow remove non-empty order". So we got to check if its empty we can delete it.
-                if (!user.allow_delete_order && order.orderlines.length > 0) {
+                if ((!this.pos.config.iface_allow_delete_order || !user.allow_delete_order) && order.orderlines.length > 0) {
                     this.$('.deleteorder-button').addClass('disable');
                 } else {
                     this.$('.deleteorder-button').removeClass('disable');
@@ -157,7 +157,7 @@ odoo.define('pos_disable_payment', function(require){
         },
         checkCreateOrderLine: function () {
             var user = this.pos.cashier || this.pos.user;
-            if (user.allow_create_order_line) {
+            if (this.pos.config.iface_allow_create_order_line && user.allow_create_order_line) {
                 $('.numpad').show();
                 $('.rightpane').show();
             }else{
@@ -223,7 +223,7 @@ odoo.define('pos_disable_payment', function(require){
         renderElement: function () {
             this._super();
             var user = this.pos.cashier || this.pos.user;
-            if (user.allow_payments) {
+            if (this.pos.config.iface_allow_payments && user.allow_payments) {
                 $('.pay').removeClass('disable');
             } else{
                 $('.pay').addClass('disable');
@@ -266,17 +266,17 @@ odoo.define('pos_disable_payment', function(require){
             if (order) {
                 orderline = order.get_selected_orderline();
             }
-            if (user.allow_discount) {
+            if (this.pos.config.iface_allow_discount && user.allow_discount) {
                 this.$el.find("[data-mode='discount']").removeClass('disable');
             }else{
                 this.$el.find("[data-mode='discount']").addClass('disable');
             }
-            if (user.allow_edit_price) {
+            if (this.pos.config.iface_allow_edit_price && user.allow_edit_price) {
                 this.$el.find("[data-mode='price']").removeClass('disable');
             }else{
                 this.$el.find("[data-mode='price']").addClass('disable');
             }
-            if (user.allow_refund) {
+            if (this.pos.config.iface_allow_refund && user.allow_refund) {
                 this.$el.find('.numpad-minus').removeClass('disable');
             }else{
                 this.$el.find('.numpad-minus').addClass('disable');

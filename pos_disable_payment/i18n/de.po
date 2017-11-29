@@ -25,41 +25,49 @@ msgstr "Zugang"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_create_order_line
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_create_order_line
 msgid "Allow create order line"
 msgstr "Die Erzeugung von Bestellzeilen erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_decrease_amount
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_decrease_amount
 msgid "Allow decrease quantity on order line"
 msgstr "Das Reduzieren von Mengen einer Bestellzeile erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_discount
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_discount
 msgid "Allow discount"
 msgstr "Rabatt erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_edit_price
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_edit_price
 msgid "Allow edit price"
 msgstr "Preisänderungen erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_payments
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_payments
 msgid "Allow payments"
 msgstr "Zahlungen erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_refund
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_refund
 msgid "Allow refunds"
-msgstr ""
+msgstr "Das Zurückgeben erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_delete_order
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_delete_order
 msgid "Allow remove non-empty order"
 msgstr "Löschen von nicht-leeren Bestellungen erlauben"
 
 #. module: pos_disable_payment
 #: model:ir.model.fields,field_description:pos_disable_payment.field_res_users_allow_delete_order_line
+#: model:ir.model.fields,field_description:pos_disable_payment.field_pos_config_iface_allow_delete_order_line
 msgid "Allow remove order line"
 msgstr "Das Entfernen von Bestellzeilen erlauben"
 

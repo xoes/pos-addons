@@ -24,3 +24,16 @@ class ResUsers(models.Model):
     @api.model
     def is_module_installed(self, module_name=None):
         return module_name in self.env['ir.module.module']._installed()
+
+
+class PosConfig(models.Model):
+    _inherit = 'pos.config'
+
+    iface_allow_payments = fields.Boolean('Allow payments', default=True)
+    iface_allow_delete_order = fields.Boolean('Allow remove non-empty order', default=True)
+    iface_allow_discount = fields.Boolean('Allow discount', default=True)
+    iface_allow_edit_price = fields.Boolean('Allow edit price', default=True)
+    iface_allow_decrease_amount = fields.Boolean('Allow decrease order line', default=True)
+    iface_allow_delete_order_line = fields.Boolean('Allow remove order line', default=True)
+    iface_allow_create_order_line = fields.Boolean('Allow create order line', default=True)
+    iface_allow_refund = fields.Boolean('Allow refunds', default=True)

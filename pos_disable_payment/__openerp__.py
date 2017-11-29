@@ -16,6 +16,7 @@
     "currency": "EUR",
     'data': [
         'views.xml',
+        'views/pos_config_views.xml.xml',
     ],
     'demo': [
         'views/assets_demo.xml',
